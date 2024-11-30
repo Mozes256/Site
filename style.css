@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2family=Poppins:wght@300;400;500;600;700;800;900 & display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 * {
     margin: 0;
@@ -36,6 +36,7 @@ section {
 .header {
     position: fixed;
     top: 0;
+    left: 0;
     width: 100%;
     padding: 2rem 9%;
     background: var(--bg-color);
@@ -46,7 +47,7 @@ section {
 }
 
 .header.sticky {
-    border-bottom: .1rem solid rgbs(0, 0, 0, .2);
+    border-bottom: .1rem solid rgba(0, 0, 0, .2);
 }
 
 .logo {
@@ -85,6 +86,7 @@ section {
     border-radius: 50%;
     border: 10px solid var(--main-color);
     box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    background: var(--second-bg-color);
     animation: floatImage 4s ease-in-out infinite;
 }
 
@@ -252,12 +254,13 @@ span {
     display: grid;
     grid-template-columns: repeat(3 1fr);
     align-items: center;
+    flex-wrap: wrap;
     gap: 2.5rem;
 }
 
 .portfolio-container .portfolio-box {
     position: relative;
-    border-radius: 4rem;
+    border-radius: 3rem;
     box-shadow: 0 0 1rem var(--bg-color);
     overflow: hidden;
     display: flex;
